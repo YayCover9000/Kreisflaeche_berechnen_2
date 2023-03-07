@@ -23,7 +23,9 @@ public class KreisflaecheBerechnen {
             System.out.println("Eingabefehler");
             scanner.close();
         }
+        scanner.close();
     }
+
     public static void ausgeben(double fläche) {
         System.out.println("Flaeche: " + fläche);
     }
