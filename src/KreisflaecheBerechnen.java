@@ -4,7 +4,7 @@ public class KreisflaecheBerechnen {
     /* Fläche=π∗radius²
     π=3,14159
     */
-    static final double PI = Math.PI;
+    public static final double PI = Math.PI;
 
 
     public static void main(String [] args) {
@@ -12,13 +12,11 @@ public class KreisflaecheBerechnen {
         Scanner scanner = new Scanner(System.in);
         // Radius als Double einlesen
         double radius = scanner.nextDouble();
-        // Radius quadratieren und in Variable speichern
-        double radiusPow = Math.pow(radius, 2);
         // intialied Double flaeche
         double flaeche = 0.0;
 
         if (radius > 0) {
-            flaeche = PI * radiusPow;
+            flaeche = PI * radius * radius;
             KreisflaecheBerechnen.ausgeben(flaeche);
         }
         else {
