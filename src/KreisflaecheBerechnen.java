@@ -18,7 +18,7 @@ public class KreisflaecheBerechnen {
         double flaeche = 0.0;
 
         if (radius > 0) {
-            flaeche = PI * radius;
+            flaeche = PI * radiusPow;
             KreisflaecheBerechnen.ausgeben(flaeche);
         }
         else {
