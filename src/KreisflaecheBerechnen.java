@@ -12,12 +12,14 @@ public class KreisflaecheBerechnen {
         Scanner scanner = new Scanner(System.in);
         // Radius als Double einlesen
         double radius = scanner.nextDouble();
-        // intialied Double fläche
-        double fläche = 0.0;
+        // Radius quadratieren und in Variable speichern
+        double radiusPow = Math.pow(radius, 2);
+        // intialied Double flaeche
+        double flaeche = 0.0;
 
         if (radius > 0) {
-            fläche = PI * radius;
-            KreisflaecheBerechnen.ausgeben(fläche);
+            flaeche = PI * radius;
+            KreisflaecheBerechnen.ausgeben(flaeche);
         }
         else {
             System.out.println("Eingabefehler");
@@ -26,7 +28,7 @@ public class KreisflaecheBerechnen {
         scanner.close();
     }
 
-    public static void ausgeben(double fläche) {
-        System.out.println("Flaeche: " + fläche);
+    public static void ausgeben(double flaeche) {
+        System.out.println("Flaeche: " + flaeche);
     }
 }
